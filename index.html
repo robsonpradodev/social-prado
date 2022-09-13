@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pradoSocial - Rede Social Responsiva</title>
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                pradoSocial
+            </h2>
+
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Procure por criadores, inpirações e projetos">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Criar</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpeg" alt="Imagem de Perfil1">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <!--   ================== MAIN ===================== -->
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <!-- ================== ESQUERDA ===================== -->
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpeg" alt="Imagem de Perfil 1">
+                    </div>
+                    <div class="handle">
+                        <h4>Robson Prado</h4>
+                        <p class="text-muted">
+                            @orobsonprado
+                        </p>
+                    </div>
+                </a>
+
+                <!-- -------------SIDEBAR------------- -->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span> <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-compass"></i></span> <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span> <h3>Notificações</h3>
+                        <!-- -------------NOTIFICAÇÕES POPUP-------------- -->
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-2.jpg" alt="Foto de perfil 2">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Lucas Silva</b> aceitou sua requisição de amizade
+                                    <small class="text-muted">2 DIAS ATRÁS</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-3.jpg" alt="Foto de perfil 3">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ana Benjamin</b> comentou o seu post
+                                    <small class="text-muted">1 HORA ATRÁS</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-4.jpg" alt="Foto de perfil 4">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Maria Eduarda</b> e <strong>283 pessoas</strong> curtiram o seu post
+                                    <small class="text-muted">4 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-5.jpg" alt="Foto de perfil 5">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Fernanda</b> comentou em um post que você foi marcada
+                                    <small class="text-muted">2 DIAS ATRÁS</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-6.jpg" alt="Foto de perfil 6">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Ferdinanda</b> e <strong>168 pessoas</strong> curtiram o seu post
+                                    <small class="text-muted">3 HORAS ATRÁS</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="./images/profile-7.jpg" alt="Foto de perfil 7">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Julio</b> comentou em um post que você foi marcada
+                                    <small class="text-muted">2 HORAS ATRÁS</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    <!-- -------------FINAL DAS NOTIFICAÇÕES POPUP-------------- -->
+                    </a>
+                    <a class="menu-item" id="messages-notification">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span> <h3>Mensagens</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i></span> <h3>Salvos</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+                        <span><i class="uil uil-palette"></i></span> <h3>Tema</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i></span> <h3>Configurações</h3>
+                    </a>
+
+                </div>
+
+                <!-- -------------FINAL DA SIDEBAR-------------- -->
+                <label for="create-post" class="btn btn-primary">Criar Post</label>
+            </div>
+
+            <!-- ================== CENTRO ===================== -->
+            <div class="middle">
+                 <!-- -------------STORIES-------------- -->
+                 <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-1.jpeg" alt="Foto de perfil 1">
+                        </div>
+                        <p class="name">Seu Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-8.jpg" alt="Foto de perfil 8">
+                        </div>
+                        <p class="name">Harry Potter</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-9.jpg" alt="Foto de perfil 9">
+                        </div>
+                        <p class="name">Darth Vader</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-10.jpg" alt="Foto de perfil 10">
+                        </div>
+                        <p class="name">Peter Parker</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-11.jpg" alt="Foto de perfil 11">
+                        </div>
+                        <p class="name">Jack Sparrow</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-12.jpg" alt="Foto de perfil 12">
+                        </div>
+                        <p class="name">Terminator</p>
+                    </div>
+                  <!--   <div class="story">
+                        <div class="profile-photo">
+                            <img src="./images/profile-13.jpg" alt="Foto de perfil 13">
+                        </div>
+                        <p class="name">Amélia Dantes</p>
+                    </div> -->
+                 </div>
+                 <!-- ------------- FINAL DOS STORIES-------------- -->
+                 <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpeg" alt="Foto profile 1">
+                    </div>
+                    <input type="text" placeholder="O que está na sua mente?" id="create-post">
+                    <input type="submit" value="Postar" class="btn btn-primary">
+                 </form>
+
+                  <!-- ------------- POSTAGENS -------------- -->
+                  <div class="feeds">
+
+                    <!-- ------------- POSTAGEM 1 -------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-10.jpg" alt="Foto perfil 10">
+                                </div>
+                                <div class="info">
+                                    <h3>Peter Parker</h3>
+                                    <small>New York, 15 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>    
+                                <span class="edit">
+                                   <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-1.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interacton-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                                <span><i class="uil uil-bookmark-full"></i></span>
+
+                                <div class="liked-by">
+                                    <span><img src="images/profile-8.jpg"></span>
+                                    <span><img src="images/profile-16.jpg"></span>
+                                    <span><img src="images/profile-17.jpg"></span>
+                                    <p>Curtido por <b>Mikey TNT</b> e  <b>260</b> outras pessoas</p>
+                                </div>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Peter Parker</b> Aproveita o descontão de hoje, entrego em 3 minutos...Provavelmente! <span class="harsh-tag">#semtransito</span></p>
+                            </div>
+                            <div class=" comments text-muted">Ver todos os 90 comentários</div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- ------------- POSTAGEM 2 -------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-9.jpg" alt="Foto perfil 9">
+                                </div>
+                                <div class="info">
+                                    <h3>Darth Vader</h3>
+                                    <small>Coruscant, 24 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>    
+                                <span class="edit">
+                                   <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-2.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interacton-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                                <span><i class="uil uil-bookmark-full"></i></span>
+
+                                <div class="liked-by">
+                                    <span><img src="images/profile-8.jpg"></span>
+                                    <span><img src="images/profile-16.jpg"></span>
+                                    <span><img src="images/profile-17.jpg"></span>
+                                    <p>Curtido por <b>Stormtrooper</b> e  <b>320</b> outras pessoas</p>
+                                </div>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Darth Vader</b> Dando aquela pausa porque ninguém é de ferro...quer dizer...<span class="harsh-tag">#souseupai</span></p>
+                            </div>
+                            <div class=" comments text-muted">Ver todos os 89 comentários</div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- ------------- POSTAGEM 3 -------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-8.jpg" alt="Foto perfil 8">
+                                </div>
+                                <div class="info">
+                                    <h3>Harry Potter</h3>
+                                    <small>Hogwarts, 30 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>    
+                                <span class="edit">
+                                   <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-3.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interacton-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                                <span><i class="uil uil-bookmark-full"></i></span>
+
+                                <div class="liked-by">
+                                    <span><img src="images/profile-8.jpg"></span>
+                                    <span><img src="images/profile-16.jpg"></span>
+                                    <span><img src="images/profile-17.jpg"></span>
+                                    <p>Curtido por <b>Ronny Weasley</b> e  <b>278</b> outras pessoas</p>
+                                </div>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Harry Potter</b> <span class="harsh-tag">#Expelliarmus</span></p>
+                            </div>
+                            <div class=" comments text-muted">Ver todos os 105 comentários</div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- ------------- POSTAGEM 4 -------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-11.jpg" alt="Foto perfil 10">
+                                </div>
+                                <div class="info">
+                                    <h3>Jack Sparrow</h3>
+                                    <small>Caribe, 45 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>    
+                                <span class="edit">
+                                   <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-4.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interacton-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                                <span><i class="uil uil-bookmark-full"></i></span>
+
+                                <div class="liked-by">
+                                    <span><img src="images/profile-8.jpg"></span>
+                                    <span><img src="images/profile-16.jpg"></span>
+                                    <span><img src="images/profile-17.jpg"></span>
+                                    <p>Curtido por <b>Hancock</b> e  <b>160</b> outras pessoas</p>
+                                </div>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Jack Sparrow</b> Essa sim é a lenda <span class="harsh-tag">#issoéumsonh...</span></p>
+                            </div>
+                            <div class=" comments text-muted">Ver todos os 48 comentários</div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- ------------- POSTAGEM 5 -------------- -->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="./images/profile-12.jpg" alt="Foto perfil 10">
+                                </div>
+                                <div class="info">
+                                    <h3>Terminator</h3>
+                                    <small>Planeta Terra, 55 MINUTOS ATRÁS</small>
+                                </div>
+                            </div>    
+                                <span class="edit">
+                                   <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="./images/feed-5.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interacton-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                                <span><i class="uil uil-bookmark-full"></i></span>
+
+                                <div class="liked-by">
+                                    <span><img src="images/profile-8.jpg"></span>
+                                    <span><img src="images/profile-16.jpg"></span>
+                                    <span><img src="images/profile-17.jpg"></span>
+                                    <p>Curtido por <b>Rambo</b> e <b>260</b> outras pessoas</p>
+                                </div>
+                            </div>
+
+                            <div class="caption">
+                                <p><b>Terminator</b> O que acharam da nova armadura? <span class="harsh-tag">#segura_T-1000</span></p>
+                            </div>
+                            <div class=" comments text-muted">Ver todos os 90 comentários</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div><!-- =================FINAL DO CENTRO============= -->
+
+            <!-- ================== DIREITA ===================== -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Mensagens</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <!-- ---------- SEARCHBAR ------------ -->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Procure mensagens" id="message-search">
+                    </div>
+                    <!-- -----CATEGORIA DE MENSAGENS -------->
+                    <div class="category">
+                        <h6 class="active">Primárias</h6>
+                        <h6>Gerais</h6>
+                        <h6 class="message-requests">Requisições(3)</h6>
+                    </div>
+                    <!-- -------- MENSAGEM ------------ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-8.jpg" alt="Imagem profile 8">
+                        </div>
+                        <div class="message-body">
+                            <h5>Harry Potter</h5>
+                            <p class="text-muted">Caldeirão furado hoje??</p>
+                        </div>
+                    </div>
+                    <!-- -------- MENSAGEM ------------ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="images/profile-11.jpg" alt="Imagem profile 8">
+                        </div>
+                        <div class="message-body">
+                            <h5>Jack Sparrow</h5>
+                            <p class="text-muted">Me empresta seu barco?</p>
+                        </div>
+                    </div>
+                    <!-- -------- MENSAGEM ------------ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img style="max-height: 44px;" src="images/profile-12.jpg" alt="Imagem profile 8">
+                        </div>
+                        <div class="message-body">
+                            <h5>Terminator</h5>
+                            <p class="text-muted">Bora exterminar o bíceps?</p>
+                        </div>
+                    </div>
+                    <!-- -------- MENSAGEM ------------ -->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img style="max-height: 44px;" src="images/profile-10.jpg" alt="Imagem profile 8">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Peter Parker</h5>
+                            <p class="text-muted">É que hoje eu tenho que...é...</p>
+                        </div>
+                    </div>
+                </div> <!-- ******** -->
+
+                <!-- ------ Requisições de amizade --------- -->
+                <div class="friend-requests">
+                    <h4>Requisições</h4>
+                    <!-- REQUISIÇÃO -->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-18.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Ronny Weasley</h5>
+                                <p class="text-muted">
+                                    8 amigos em comúm
+                                </p>
+                                <div class="action">
+                                    <button class="btn btn-primary">
+                                        Aceitar
+                                    </button>
+                                    <button class="btn">
+                                        Recusar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- REQUISIÇÃO -->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-17.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Tonny Stark</h5>
+                                <p class="text-muted">
+                                    18 amigos em comúm
+                                </p>
+                                <div class="action">
+                                    <button class="btn btn-primary">
+                                        Aceitar
+                                    </button>
+                                    <button class="btn">
+                                        Recusar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- REQUISIÇÃO -->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="images/profile-7.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Chris</h5>
+                                <p class="text-muted">
+                                    4 amigos em comúm
+                                </p>
+                                <div class="action">
+                                    <button class="btn btn-primary">
+                                        Aceitar
+                                    </button>
+                                    <button class="btn">
+                                        Recusar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ======================= CUSTOMIZAÇÃO DE TEMAS ======================-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize para sua vista</h2>
+            <p class="text-muted">Controle o tamanho da fonte, cores, e fundos</p>
+
+            <!-- ---------TAMANHO DA FONTE --------- -->
+            <div class="font-size">
+                <h4>Tamanho da fonte</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1 active"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+            <!-- -------CORES PRIMÁRIAS --------- -->
+            <div class="color">
+                <h4>Cores</h4>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!----------CORES DE FUNDO ------------->
+            <div class="background">
+                <h4>Fundo</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Claro</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Escurecer</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5>Apagar Luzes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
