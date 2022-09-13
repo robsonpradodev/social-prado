@@ -1,2 +1,2 @@
-# socialprado
+# socialPrado
 Rede Social
